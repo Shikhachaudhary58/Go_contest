@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mytransaction"
+    android:orientation="vertical">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar7"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/toolbar_bg"
+      android:minHeight="?attr/actionBarSize"
+      app:title="My Transaction"
+      app:titleMarginStart="90dp"
+      app:titleTextColor="@color/white"
+      android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+
+  </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablayout1">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabitem1"
+            android:text="Deposit"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabitem2"
+            android:text="Withdraw"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Pager1">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+</LinearLayout>

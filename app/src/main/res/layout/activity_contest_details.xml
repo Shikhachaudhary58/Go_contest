@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contest_details"
+    android:orientation="vertical"
+    android:background="@drawable/background1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/contest_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="contest detail"
+        android:gravity="center"
+        android:background="@drawable/toolbar_bg"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="90dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        app:cardElevation="100dp"
+        app:cardCornerRadius="10dp"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/gray">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/contest_bg"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play and Win: Rs. 5000"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:id="@+id/text1"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="30dp"
+                android:text="Entry Fees Rs 10"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="290dp">
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End in 00:45:03"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/green"
+                android:drawableStart="@drawable/green_bg"
+                android:drawablePadding="5dp"/>
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Rank Breakup"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/clickable_text_color_selector"
+                android:textStyle="bold"
+                android:textSize="9dp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer as Many Questionn As You Can"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You get 360 Seconds"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 Questions"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/quiz"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:text="Start Quiz"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="Game Rule"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/group"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#4B1795"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Terms and Conditions agreement dictates the rules, restrictions, obiligations and responsibilities while playing Your game."
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

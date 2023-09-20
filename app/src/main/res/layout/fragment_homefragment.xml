@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/navDrawer"
+    tools:openDrawer="start"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:background="@color/purple_500"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sideMenu"
+                android:layout_width="35dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/ic_baseline_menu_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logofirst"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:background="@drawable/ic_baseline_notifications_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/trace__4_"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.432" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewpagerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="0.352" >
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navViewAcceptedTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:layout_constraintCircleRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:rotation="-11"
+                    android:background="@color/purple"
+                    android:layout_marginTop="-38dp"
+                    android:layout_marginStart="-9dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_margin="15dp"
+                    android:id="@+id/back"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user"
+                    android:text="Guest user"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_margin="40dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+918887697854"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="1000dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card"
+                app:layout_constraintEnd_toEndOf="@+id/card"
+                app:layout_constraintStart_toStartOf="@+id/card"
+                app:layout_constraintTop_toTopOf="@+id/card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/profile"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="1000dp"
+                android:layout_marginStart="39dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+                app:layout_constraintEnd_toEndOf="@+id/cardView4"
+                app:layout_constraintStart_toStartOf="@+id/cardView4"
+                app:layout_constraintTop_toTopOf="@+id/cardView4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/ic_baseline_camera_alt_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="11dp"
+                    android:text="My Profile"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/contest"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="20dp"
+                    android:text="My Contest"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_account_balance_wallet_24"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:paddingStart="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:text="My Wallet"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/transactions_icon_25"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:paddingStart="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:text="My Trasaction"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:drawableStart="@drawable/ic_baseline_account_balance_24"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:text="Account Details"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/refers"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:paddingStart="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:text="Refer and Earn"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/play_symbol_vector_icon"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="13dp"
+                    android:text="How to Play"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_privacy_tip_24"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:paddingStart="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:text="Privacy and Policy"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/terms_and_conditions_icon_with_overlapping_sheets_of_paper"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="13dp"
+                    android:paddingStart="20dp"
+                    android:text="Term and Conditions"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_help_24"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="20dp"
+                    android:text="Help and Support"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_logout_24"
+                    android:gravity="start"
+                    android:paddingStart="120dp"
+                    android:drawablePadding="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="12dp"
+                    android:text="Logout"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

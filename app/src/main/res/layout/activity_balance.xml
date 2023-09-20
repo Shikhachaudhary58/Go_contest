@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".Balance">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="My Balance"
+        app:titleMarginStart="100dp"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="330dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="149dp"
+            android:layout_marginEnd="159dp"
+            android:id="@+id/wallet1"
+            android:src="@drawable/wallet1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="138dp"
+            android:text="Total Balance"
+            android:textSize="15dp"
+            android:id="@+id/balance_txt"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/balance_txt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="158dp"
+            android:id="@+id/balance_txt1"
+            android:text="₹30"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height=".20dp"
+            android:layout_below="@id/balance_txt1"
+            android:id="@+id/txt2"
+            android:background="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt2"
+            android:text="Deposits"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/deposit"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹30"
+            android:layout_below="@+id/deposit"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"
+            android:id="@+id/txt3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:layout_marginStart="250dp"
+            android:background="@drawable/button_bg"
+            android:id="@+id/addcash"
+            android:layout_marginTop="16dp"
+            android:text="Add Cash"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="7dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height=".20dp"
+            android:id="@+id/txt4"
+            android:background="@color/black"
+            android:layout_below="@+id/txt3"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt4"
+            android:text="Winnings"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/winning"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹30"
+            android:layout_below="@+id/winning"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"
+            android:id="@+id/txt5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt4"
+            android:layout_marginStart="250dp"
+            android:background="@drawable/button_bg"
+            android:id="@+id/txt6"
+            android:layout_marginTop="16dp"
+            android:text="Withdraw"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="7dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height=".20dp"
+            android:id="@+id/txt7"
+            android:background="@color/black"
+            android:layout_below="@+id/txt5"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt7"
+            android:text="Complete Your KYC"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/kyc"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:layout_below="@+id/kyc"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:id="@+id/txt8"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_below="@+id/txt7"
+            android:id="@+id/arrow"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="320dp"
+            android:clickable="true"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/contest_bg"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_2"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ques"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:id="@+id/text1"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:text="play"
+                android:textColor="@color/red"
+                android:paddingStart="5dp"
+                android:drawableStart="@drawable/trace__5_"
+                android:drawablePadding="6dp"
+                android:background="@drawable/contest_frag1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fees"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="290dp">
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="users"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="9dp"
+                android:layout_marginLeft="7dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Join Now"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:background="@drawable/button_bg"
+                android:textSize="8dp"
+                android:layout_marginTop="25dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

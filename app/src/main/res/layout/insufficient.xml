@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/refer_bg">
+
+    <TextView
+        android:id="@+id/wb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insufficient Balance"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/wb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance Rs. 0"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/wb1"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"/>
+    <ImageView
+        android:id="@+id/balance"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/wb2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/wallet1"/>
+
+    <TextView
+        android:id="@+id/w3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Rs. 10 to your Wallet to start contest"
+        android:textStyle="bold"
+        android:layout_below="@+id/balance"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="40dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:text="Cancel"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cnt"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="@color/teal_700"
+            android:textAllCaps="false"
+            android:text="Continue"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

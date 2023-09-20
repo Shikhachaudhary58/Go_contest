@@ -1,0 +1,12 @@
+<!-- res/color/clickable_text_color_selector.xml -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Text color when TextView is pressed -->
+    <item android:color="@color/clickable_text_pressed" android:state_pressed="true" />
+
+    <!-- Text color when TextView is focused (e.g., has focus but not pressed) -->
+    <item android:color="@color/clickable_text_focused" android:state_focused="true" />
+
+    <!-- Default text color when TextView is in its normal state -->
+    <item android:color="@color/black" />
+</selector>

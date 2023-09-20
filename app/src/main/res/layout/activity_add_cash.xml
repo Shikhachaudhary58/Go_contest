@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_cash"
+    android:background="@drawable/background1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Add Cash"
+        app:titleMarginStart="110dp"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar8"
+        app:layout_constraintVertical_bias="0.075">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="200dp"
+            android:hint="Enter Amount"
+            android:textColorHint="@color/black"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.065"
+            app:placeholderText="₹ Enter Amount Here"
+            app:shapeAppearance="@style/rounded"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/ettext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignTop="@+id/textInputLayout"
+            android:layout_alignEnd="@+id/textInputLayout"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="227dp"
+            android:background="@drawable/button_bg"
+            android:text="+ ₹100 "
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="7dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/ettext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignTop="@+id/textInputLayout"
+            android:layout_alignEnd="@+id/textInputLayout"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="123dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="7dp"
+            android:background="@drawable/button_bg"
+            android:text="+ ₹100 "
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/ettext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignTop="@+id/textInputLayout"
+            android:layout_alignEnd="@+id/textInputLayout"
+            android:layout_marginTop="79dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="7dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_bg"
+            android:text="+ ₹100 "
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ettext4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ettext2"
+            android:layout_alignTop="@+id/textInputLayout"
+            android:layout_alignEnd="@+id/textInputLayout"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="88dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="7dp"
+            android:background="@drawable/button_bg"
+            android:textAllCaps="false"
+            android:text="Add Money"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ettext4"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/pvt1"
+            android:text="100% Safe And Secure Payment"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

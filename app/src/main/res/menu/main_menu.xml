@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_profile" android:title="My Profile" android:icon="@drawable/ic_baseline_account_circle_24"  />
+        <item android:id="@+id/nav_contest" android:title="My Contest" android:icon="@drawable/contest"/>
+        <item android:id="@+id/nav_wallet" android:title="My Wallet" android:icon="@drawable/ic_baseline_account_balance_wallet_24"/>
+        <item android:id="@+id/nav_transaction" android:title="My Transaction" android:icon="@drawable/transactions_icon_25"/>
+        <item android:id="@+id/nav_account" android:title="Account Detail" android:icon="@drawable/ic_baseline_account_balance_24"/>
+        <item android:id="@+id/nav_refer" android:title="Refer and Earn" android:icon="@drawable/refers"/>
+        <item android:id="@+id/nav_play" android:title="How to Play" android:icon="@drawable/play_symbol_vector_icon"/>
+        <item android:id="@+id/nav_privacy" android:title="Privacy Policy" android:icon="@drawable/ic_baseline_privacy_tip_24"/>
+        <item android:id="@+id/nav_terms" android:title="Terms and Conditions" android:icon="@drawable/terms_and_conditions_icon_with_overlapping_sheets_of_paper"/>
+        <item android:id="@+id/nav_Help" android:title="Help and support" android:icon="@drawable/ic_baseline_help_24"/>
+
+    </group>
+
+        <item android:id="@+id/nav_logout" android:title="Logout" android:icon="@drawable/ic_baseline_logout_24" android:orderInCategory="9999" />
+
+
+</menu>

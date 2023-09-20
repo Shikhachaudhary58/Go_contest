@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".private_contest"
+    android:background="@drawable/bg2"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/logo3"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@drawable/rounded"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="PRIVATE CONTEST"
+            android:textColor="@color/purple"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Each contest and tournament will give you a chance to earn your winnings"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:layout_marginTop="200dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/purple"
+            />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="Next"
+            android:layout_marginLeft="270dp"
+            android:background="@drawable/rounded_corner"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="230dp"
+                android:background="@drawable/scrolling" />
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/scrolling"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scrolling1"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/scrolling"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
